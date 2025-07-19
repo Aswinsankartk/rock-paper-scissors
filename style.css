@@ -37,7 +37,7 @@ button{
     height:50px;
     border:0;
     border-radius:5px;
-    background-color:#F6E8F6;
+    background-color:hsla(300, 44%, 94%, 1);
     font-family:"Outfit",Arial;
     font-weight:500;
     transition: all 0.5s ease;
@@ -48,10 +48,11 @@ button{
     height:100px;
     border:0;
     border-radius:30px;
-    background-color:#f6e8ea;
+    background-color:hsla(351, 100%, 97%, 0.9);
     font-family:"Outfit",Arial;
     font-weight:600;
-    font-size:18px;
+    text-shadow:0 0 10px hsla(351, 0%, 0%, 0.3);
+    font-size:25px;
     transition: all 0.5s ease;
 }
 
@@ -61,7 +62,7 @@ button{
 }
 
 .botmove-p{
-    padding-bottom:20px ;
+    padding-bottom:2px ;
 }
 
 /*Score Card*/
@@ -73,6 +74,7 @@ button{
     border-radius: 20px;
     border: 1px solid white;
     margin:10px 100pt;
+    margin-top:20px;
     text-align:center;
     box-shadow: 0 0 8px 4px #FFFFFF14;
 }
