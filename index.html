@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors Game</title>
+  <!--Font code-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <!--Linking CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Title and Developers Name-->
+  <div class='hero'>
+    <h1>Rock Paper Scissors</h1>
+    <p>Developed by Aswin Sankar</p>
+  </div>
+  
+  <!--Play Buttons-->
+  <div class="buttons-container">
+    <button class="buttons" onclick="calculateResult('Rock');">
+      Rock</button>
+    <button class="buttons" onclick="calculateResult('Paper');">
+      Paper</button>
+    <button class="buttons" onclick="calculateResult('Scissors');">Scissors</button>
+  </div>
+  
+  <!--Moves Display-->
+    <p class="youmove-p">
+      <span class="you-move"></span>
+    </p>
+    <p class="botmove-p">
+      <span class="bot-move"></span>
+    </p>
+  
+  <!--Score Card-->
+  <div class='score-card'>
+    <p class='wins js-wins'></p>
+    <p class='losses js-losses'></p>
+    <p class='ties js-ties'></p>
+  </div>
+  
+  <!--Reset Button-->
+  <div class="reset-button">
+    <button onclick="
+  scores.wins = 0;
+  scores.losses = 0;
+  scores.ties = 0;
+  localStorage.removeItem('score');
+  updateScore();
+  ">Reset Score</button>
+  </div>
+  
+  <!--Linking JavaScript-->
+  <script src="script.js"></script>
+</body>
+</html>
