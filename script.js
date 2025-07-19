@@ -5,7 +5,7 @@ let scores = JSON.parse(localStorage.getItem('score')) || {
   ties : 0 };
 
 updateScore();
-  
+
 //For Updating the Score after Pressing Reset Score & Refreshing.
 function updateScore(){
   document.querySelector('.js-wins').innerHTML=`Win: ${scores.wins}`;
@@ -71,6 +71,6 @@ function calculateResult(uMove){
   document.querySelector('.js-losses').innerHTML = `Loss: ${scores.losses}`;
   document.querySelector('.js-ties').innerHTML = `Tie: ${scores.ties}`;
 //For Displaying Current Moves.
-  document.querySelector('.you-move').innerHTML = `You — ${uMove}`;
-  document.querySelector('.bot-move').innerHTML = `Bot — ${botMove}`;
+  document.querySelector('.you-move').innerHTML = `You &#8594; ${uMove}`;
+  document.querySelector('.bot-move').innerHTML = `Bot &#8594; ${botMove}`;
 }
